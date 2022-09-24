@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from geometry_msgs.msg import Pose
 from manager.srv import getTarget,getTargetResponse
 import rospy
