@@ -1,0 +1,9 @@
+rosserial/rosserial_server
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_server/cmake.lock /root/Candidates-2022/challenge_ws/devel/./cmake.lock
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_server/lib/librosserial_server_lookup.so /root/Candidates-2022/challenge_ws/devel/lib/librosserial_server_lookup.so
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_server/lib/rosserial_server/udp_socket_node /root/Candidates-2022/challenge_ws/devel/lib/rosserial_server/udp_socket_node
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_server/lib/rosserial_server/serial_node /root/Candidates-2022/challenge_ws/devel/lib/rosserial_server/serial_node
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_server/lib/rosserial_server/socket_node /root/Candidates-2022/challenge_ws/devel/lib/rosserial_server/socket_node
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_server/lib/pkgconfig/rosserial_server.pc /root/Candidates-2022/challenge_ws/devel/lib/pkgconfig/rosserial_server.pc
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_server/share/rosserial_server/cmake/rosserial_serverConfig.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_server/cmake/rosserial_serverConfig.cmake
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_server/share/rosserial_server/cmake/rosserial_serverConfig-version.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_server/cmake/rosserial_serverConfig-version.cmake

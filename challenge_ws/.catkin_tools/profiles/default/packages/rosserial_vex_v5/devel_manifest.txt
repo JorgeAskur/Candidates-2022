@@ -1,0 +1,8 @@
+rosserial/rosserial_vex_v5
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_v5/cmake.lock /root/Candidates-2022/challenge_ws/devel/./cmake.lock
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_v5/lib/python3/dist-packages/rosserial_vex_v5/__init__.py /root/Candidates-2022/challenge_ws/devel/lib/python3/dist-packages/rosserial_vex_v5/__init__.py
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_v5/lib/pkgconfig/rosserial_vex_v5.pc /root/Candidates-2022/challenge_ws/devel/lib/pkgconfig/rosserial_vex_v5.pc
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_v5/share/rosserial_vex_v5/make_libraries.py /root/Candidates-2022/challenge_ws/devel/share/rosserial_vex_v5/make_libraries.py
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_v5/share/rosserial_vex_v5/cmake.lock /root/Candidates-2022/challenge_ws/devel/share/rosserial_vex_v5/cmake.lock
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_v5/share/rosserial_vex_v5/cmake/rosserial_vex_v5Config-version.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_vex_v5/cmake/rosserial_vex_v5Config-version.cmake
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_v5/share/rosserial_vex_v5/cmake/rosserial_vex_v5Config.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_vex_v5/cmake/rosserial_vex_v5Config.cmake

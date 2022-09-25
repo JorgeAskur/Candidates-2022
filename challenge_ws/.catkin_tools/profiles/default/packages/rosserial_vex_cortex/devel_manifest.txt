@@ -1,0 +1,8 @@
+rosserial/rosserial_vex_cortex
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_cortex/cmake.lock /root/Candidates-2022/challenge_ws/devel/./cmake.lock
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_cortex/lib/python3/dist-packages/rosserial_vex_cortex/__init__.py /root/Candidates-2022/challenge_ws/devel/lib/python3/dist-packages/rosserial_vex_cortex/__init__.py
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_cortex/lib/pkgconfig/rosserial_vex_cortex.pc /root/Candidates-2022/challenge_ws/devel/lib/pkgconfig/rosserial_vex_cortex.pc
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_cortex/share/rosserial_vex_cortex/make_libraries.py /root/Candidates-2022/challenge_ws/devel/share/rosserial_vex_cortex/make_libraries.py
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_cortex/share/rosserial_vex_cortex/cmake.lock /root/Candidates-2022/challenge_ws/devel/share/rosserial_vex_cortex/cmake.lock
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_cortex/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig.cmake
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_vex_cortex/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig-version.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig-version.cmake

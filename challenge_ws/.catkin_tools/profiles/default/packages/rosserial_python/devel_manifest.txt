@@ -1,0 +1,9 @@
+rosserial/rosserial_python
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_python/cmake.lock /root/Candidates-2022/challenge_ws/devel/./cmake.lock
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_python/lib/rosserial_python/serial_node.py /root/Candidates-2022/challenge_ws/devel/lib/rosserial_python/serial_node.py
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_python/lib/rosserial_python/message_info_service.py /root/Candidates-2022/challenge_ws/devel/lib/rosserial_python/message_info_service.py
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_python/lib/rosserial_python/cmake.lock /root/Candidates-2022/challenge_ws/devel/lib/rosserial_python/cmake.lock
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_python/lib/python3/dist-packages/rosserial_python/__init__.py /root/Candidates-2022/challenge_ws/devel/lib/python3/dist-packages/rosserial_python/__init__.py
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_python/lib/pkgconfig/rosserial_python.pc /root/Candidates-2022/challenge_ws/devel/lib/pkgconfig/rosserial_python.pc
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_python/share/rosserial_python/cmake/rosserial_pythonConfig-version.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_python/cmake/rosserial_pythonConfig-version.cmake
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_python/share/rosserial_python/cmake/rosserial_pythonConfig.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_python/cmake/rosserial_pythonConfig.cmake

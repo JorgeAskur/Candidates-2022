@@ -1,0 +1,6 @@
+rosserial/rosserial_tivac
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_tivac/cmake.lock /root/Candidates-2022/challenge_ws/devel/./cmake.lock
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_tivac/lib/pkgconfig/rosserial_tivac.pc /root/Candidates-2022/challenge_ws/devel/lib/pkgconfig/rosserial_tivac.pc
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_tivac/share/rosserial_tivac/cmake/rosserial_tivacConfig-version.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_tivac/cmake/rosserial_tivacConfig-version.cmake
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_tivac/share/rosserial_tivac/cmake/rosserial_tivacConfig.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_tivac/cmake/rosserial_tivacConfig.cmake
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_tivac/share/rosserial_tivac/cmake/rosserial_tivac-extras.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_tivac/cmake/rosserial_tivac-extras.cmake

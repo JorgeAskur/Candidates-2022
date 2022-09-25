@@ -1,0 +1,2 @@
+rosserial/rosserial
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial/cmake.lock /root/Candidates-2022/challenge_ws/devel/./cmake.lock

@@ -37,6 +37,6 @@ class ActionServer():
         self.a_server.set_succeeded(result)
         
 if __name__ == "__main__":
-    rospy.init_node('action_server')
+    rospy.init_node('nav_server')
     s = ActionServer()
     rospy.spin()

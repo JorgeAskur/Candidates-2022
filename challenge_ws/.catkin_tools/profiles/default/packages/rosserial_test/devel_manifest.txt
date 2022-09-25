@@ -1,0 +1,5 @@
+rosserial/rosserial_test
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_test/cmake.lock /root/Candidates-2022/challenge_ws/devel/./cmake.lock
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_test/lib/pkgconfig/rosserial_test.pc /root/Candidates-2022/challenge_ws/devel/lib/pkgconfig/rosserial_test.pc
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_test/share/rosserial_test/cmake/rosserial_testConfig-version.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_test/cmake/rosserial_testConfig-version.cmake
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_test/share/rosserial_test/cmake/rosserial_testConfig.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_test/cmake/rosserial_testConfig.cmake

@@ -62,16 +62,15 @@ add_service_files(
   getTarget.srv
   getObject.srv
   getInfo.srv
-  actuator.srv
 )
 
 ## Generate actions in the 'action' folder
 add_action_files(
    FILES
-   #locker.action
+   open.action
    navigate.action
    talk.action
-   #watch.action
+   watch.action
  )
 
 # Generate added messages and services with any dependencies listed here

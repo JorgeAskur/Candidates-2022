@@ -1,0 +1,7 @@
+rosserial/rosserial_chibios
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_chibios/cmake.lock /root/Candidates-2022/challenge_ws/devel/./cmake.lock
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_chibios/lib/pkgconfig/rosserial_chibios.pc /root/Candidates-2022/challenge_ws/devel/lib/pkgconfig/rosserial_chibios.pc
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_chibios/share/rosserial_chibios/make_libraries.py /root/Candidates-2022/challenge_ws/devel/share/rosserial_chibios/make_libraries.py
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_chibios/share/rosserial_chibios/cmake.lock /root/Candidates-2022/challenge_ws/devel/share/rosserial_chibios/cmake.lock
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_chibios/share/rosserial_chibios/cmake/rosserial_chibiosConfig.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_chibios/cmake/rosserial_chibiosConfig.cmake
+/root/Candidates-2022/challenge_ws/devel/.private/rosserial_chibios/share/rosserial_chibios/cmake/rosserial_chibiosConfig-version.cmake /root/Candidates-2022/challenge_ws/devel/share/rosserial_chibios/cmake/rosserial_chibiosConfig-version.cmake
