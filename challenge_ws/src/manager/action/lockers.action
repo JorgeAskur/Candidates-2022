@@ -1,0 +1,10 @@
+# Goal
+geometry_msgs/Pose target_locker
+
+---
+# Result
+bool done
+
+---
+#Feedback
+string lockers_opened

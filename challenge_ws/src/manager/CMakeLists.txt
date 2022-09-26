@@ -71,6 +71,7 @@ add_action_files(
    navigate.action
    talk.action
    watch.action
+   lockers.action
  )
 
 # Generate added messages and services with any dependencies listed here

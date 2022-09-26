@@ -1,11 +1,11 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 from http import client
 from unittest import result
 import rospy
 import actionlib
 from geometry_msgs.msg import Pose
-from manager.msg import navigateAction, navigateGoal, talkGoal, talkAction
+from manager.msg import navigateAction, navigateGoal, talkGoal, talkAction, lockersAction, lockersFeedback, lockersResult, lockersGoal
 from manager.srv import *
 
 pose2send = Pose()
@@ -13,6 +13,17 @@ pose2send = Pose()
 pose2send.position.x = 1
 pose2send.position.y = 0
 pose2send.position.z = 1
+
+def definePose(x,y,z,ox,oy,oz,q):
+    p = Pose()
+    p.position.x = x
+    p.position.y = y
+    p.position.z = z
+    p.orientation.x = ox 
+    p.orientation.y = oy
+    p.orientation.z = oz
+    p.orientation.w = q
+    return p
 
 def feedback_cb_nav(msg):
     print("Feedback recieved: ", msg)
@@ -34,7 +45,7 @@ def call_server_nav():
     return result
 
 
-def feedback_cb(msg):
+def feedback_cb_speech(msg):
     print(msg)
 
 
@@ -45,7 +56,7 @@ def call_server_speech():
     goal = talkGoal()
     goal.text = "System is ok"
 
-    client.send_goal(goal,feedback_cb=feedback_cb)
+    client.send_goal(goal,feedback_cb=feedback_cb_speech)
 
     client.wait_for_result()
 
@@ -53,6 +64,23 @@ def call_server_speech():
 
     return result
 
+def feedback_cb_store(msg):
+    print(msg)
+
+def call_server_store(target):
+    client = actionlib.SimpleActionClient('locker_system', lockersAction)
+    client.wait_for_server()
+
+    goal = lockersGoal()
+    goal.target_locker = target
+
+    client.send_goal(goal,feedback_cb=feedback_cb_store)
+
+    client.wait_for_result()
+
+    result = client.get_result()
+
+    return result
 
 def getTarget_client(objective):
     rospy.wait_for_service('getTarget')
@@ -84,6 +112,7 @@ if __name__ == '__main__':
         go = input("pon algo: ")
         if go == '1':
             try:
+                objeto = input("Que buscas?: ")
                 #Navigtion
                 #nav_result = call_server_nav()
                 #print("Navigation says:", nav_result)
@@ -93,12 +122,16 @@ if __name__ == '__main__':
                 #print("Speech says:", talk_result)
 
                 #getTarget
-                #location = getTarget_client('Arduino')
-                #print(location)
+                location = getTarget_client(objeto)
+                print(location)
 
                 #getObject
-                name = getObject_client('31512')
-                print(name)
+                #name = getObject_client('31512')
+                #print(name)
+
+                #Store
+                store_result = call_server_store(location)
+                print("Storage:", store_result)
 
             except rospy.ROSInterruptException as e:
                 print("Something went wrong: ", e)
