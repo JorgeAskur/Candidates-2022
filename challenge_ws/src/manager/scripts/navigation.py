@@ -20,7 +20,7 @@ class ActionServer():
 
     def execute_cb(self, goal):
         success = False
-        time = random.randint(5, 20)
+        time = random.randint(1, 5)
         time_left = time
         feedback = navigateFeedback()
         result = navigateResult()

@@ -10,7 +10,9 @@ OBJECT_DICT = {
 }
 
 def handle_getObject(req):
-    return getObjectResponse(OBJECT_DICT[req.id])
+    if req.id in OBJECT_DICT:
+        return getObjectResponse(OBJECT_DICT[req.id])
+    else: return "Not Found"
 
 def getObject_server():
     rospy.init_node('getObject_server')

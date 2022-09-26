@@ -20,7 +20,7 @@ def definePose(x,y,z,ox,oy,oz,q):
     return p
 
 def feedback_cb_nav(msg):
-    print("Feedback recieved: ", msg)
+    print("Time left: ", msg.time_left)
 
 
 def call_server_nav(position):
@@ -40,7 +40,7 @@ def call_server_nav(position):
 
 
 def feedback_cb_speech(msg):
-    print(msg)
+    print(msg.progress)
 
 
 def call_server_speech():
@@ -56,10 +56,10 @@ def call_server_speech():
 
     result = client.get_result()
 
-    return result
+    return result.status
 
 def feedback_cb_store(msg):
-    print(msg)
+    print(msg.lockers_opened)
 
 def call_server_store(target):
     client = actionlib.SimpleActionClient('locker_system', lockersAction)
@@ -74,7 +74,7 @@ def call_server_store(target):
 
     result = client.get_result()
 
-    return result
+    return result.done
 
 def getTarget_client(objective):
     rospy.wait_for_service('getTarget')
@@ -103,26 +103,29 @@ def getObject_client(id):
 if __name__ == '__main__':
     rospy.init_node('main_engine')
     while True:
-        go = input("pon algo: ")
+        go = input("Quieres Abrir/Cerrar un casillero: ")
         if go == '1':
             try:
                 objeto = input("Que buscas? (ID): ")
                 #getObject
-                name = getObject_client('objeto')
+                name = getObject_client(objeto)
                 
-                #Speech
-                talk_result = call_server_speech()
-                print("Speech says:", talk_result)
+                if name != "Not Found":
+                    #Speech
+                    talk_result = call_server_speech()
+                    print("New State:", talk_result)
 
-                #getTarget
-                location = getTarget_client(name)
+                    #getTarget
+                    location = getTarget_client(name)
 
-                #Navigtion
-                nav_result = call_server_nav(location)
+                    #Navigtion
+                    nav_result = call_server_nav(location)
 
-                #Store
-                store_result = call_server_store(location)
-                print("Storage:", store_result)
+                    #Store
+                    store_result = call_server_store(location)
+                    print("Finished:", store_result)
+                else:
+                    print("ID: " + objeto + " does not exist.")
 
             except rospy.ROSInterruptException as e:
                 print("Something went wrong: ", e)
