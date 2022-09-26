@@ -8,12 +8,6 @@ from geometry_msgs.msg import Pose
 from manager.msg import navigateAction, navigateGoal, talkGoal, talkAction, lockersAction, lockersFeedback, lockersResult, lockersGoal
 from manager.srv import *
 
-pose2send = Pose()
-
-pose2send.position.x = 1
-pose2send.position.y = 0
-pose2send.position.z = 1
-
 def definePose(x,y,z,ox,oy,oz,q):
     p = Pose()
     p.position.x = x
@@ -29,12 +23,12 @@ def feedback_cb_nav(msg):
     print("Feedback recieved: ", msg)
 
 
-def call_server_nav():
+def call_server_nav(position):
     client = actionlib.SimpleActionClient('navigate_to', navigateAction)
     client.wait_for_server()
 
     goal = navigateGoal()
-    goal.target_pose = pose2send
+    goal.target_pose = position
 
     client.send_goal(goal,feedback_cb=feedback_cb_nav)
 
@@ -54,7 +48,7 @@ def call_server_speech():
     client.wait_for_server()
 
     goal = talkGoal()
-    goal.text = "System is ok"
+    goal.text = "Moving"
 
     client.send_goal(goal,feedback_cb=feedback_cb_speech)
 
@@ -112,22 +106,19 @@ if __name__ == '__main__':
         go = input("pon algo: ")
         if go == '1':
             try:
-                objeto = input("Que buscas?: ")
-                #Navigtion
-                #nav_result = call_server_nav()
-                #print("Navigation says:", nav_result)
-
+                objeto = input("Que buscas? (ID): ")
+                #getObject
+                name = getObject_client('objeto')
+                
                 #Speech
-                #talk_result = call_server_speech()
-                #print("Speech says:", talk_result)
+                talk_result = call_server_speech()
+                print("Speech says:", talk_result)
 
                 #getTarget
-                location = getTarget_client(objeto)
-                print(location)
+                location = getTarget_client(name)
 
-                #getObject
-                #name = getObject_client('31512')
-                #print(name)
+                #Navigtion
+                nav_result = call_server_nav(location)
 
                 #Store
                 store_result = call_server_store(location)
