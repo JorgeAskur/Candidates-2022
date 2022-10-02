@@ -1,9 +1,9 @@
 # Goal
-geometry_msgs/Pose pose
 string tag
+geometry_msgs/Pose pose
 ---
 # Result
 string result
 ---
 #Feedback
-string finding
+string check

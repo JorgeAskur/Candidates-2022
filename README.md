@@ -38,6 +38,29 @@ Tasks:
 3. Develop the Vision ActionServer and the GetInfo service
 4. Develop the Store ActionServer, the Linear Actuator Service and do the phisical implementation with a microcontroller
 
+For building the workspace, the catkin build command from sudo apt-get install python3-catkin-tools was used.
+
+Guide to run:
+1. Connect Arduino to the "Port Name" port in the computer.
+*in each terminal you have to run the source devel/setup.bash
+2. Run rosrun manager getInfo.py
+3. Run rosrun manager getObject.py
+4. Run rosrun manager speech.py
+5. Run rosrun manager getTarget.py
+6. Run rosrun manager vision.py
+7. Run rosrun manager navigation.py
+8. rosrun rosserial_python serial_node.py /dev/"Port Name"
+9. Run rosrun manager store.py
+10. Run rosrun manager mainEngine.py
+
+In the main engine, put 1 if you wish to open a locker and the id of the object you wish to obtain. 
+
+  ID      Object
+'12345': 'Arduino',
+'22453': 'Puente H',
+'31512': 'Motor',
+'62232': 'LED',
+
 ## References
 - [actionlib](http://wiki.ros.org/actionlib)
 - [ROS Services](http://wiki.ros.org/Services)

@@ -3,6 +3,7 @@ manager
 /root/Candidates-2022/challenge_ws/devel/.private/manager/lib/python3/dist-packages/manager/__init__.py /root/Candidates-2022/challenge_ws/devel/lib/python3/dist-packages/manager/__init__.py
 /root/Candidates-2022/challenge_ws/devel/.private/manager/lib/python3/dist-packages/manager/msg/_openFeedback.py /root/Candidates-2022/challenge_ws/devel/lib/python3/dist-packages/manager/msg/_openFeedback.py
 /root/Candidates-2022/challenge_ws/devel/.private/manager/lib/python3/dist-packages/manager/msg/_navigateFeedback.py /root/Candidates-2022/challenge_ws/devel/lib/python3/dist-packages/manager/msg/_navigateFeedback.py
+/root/Candidates-2022/challenge_ws/devel/.private/manager/lib/python3/dist-packages/manager/msg/_info.py /root/Candidates-2022/challenge_ws/devel/lib/python3/dist-packages/manager/msg/_info.py
 /root/Candidates-2022/challenge_ws/devel/.private/manager/lib/python3/dist-packages/manager/msg/_lockersActionResult.py /root/Candidates-2022/challenge_ws/devel/lib/python3/dist-packages/manager/msg/_lockersActionResult.py
 /root/Candidates-2022/challenge_ws/devel/.private/manager/lib/python3/dist-packages/manager/msg/_navigateResult.py /root/Candidates-2022/challenge_ws/devel/lib/python3/dist-packages/manager/msg/_navigateResult.py
 /root/Candidates-2022/challenge_ws/devel/.private/manager/lib/python3/dist-packages/manager/msg/_navigateAction.py /root/Candidates-2022/challenge_ws/devel/lib/python3/dist-packages/manager/msg/_navigateAction.py
@@ -78,6 +79,7 @@ manager
 /root/Candidates-2022/challenge_ws/devel/.private/manager/include/manager/lockersAction.h /root/Candidates-2022/challenge_ws/devel/include/manager/lockersAction.h
 /root/Candidates-2022/challenge_ws/devel/.private/manager/include/manager/getInfoRequest.h /root/Candidates-2022/challenge_ws/devel/include/manager/getInfoRequest.h
 /root/Candidates-2022/challenge_ws/devel/.private/manager/include/manager/talkGoal.h /root/Candidates-2022/challenge_ws/devel/include/manager/talkGoal.h
+/root/Candidates-2022/challenge_ws/devel/.private/manager/include/manager/info.h /root/Candidates-2022/challenge_ws/devel/include/manager/info.h
 /root/Candidates-2022/challenge_ws/devel/.private/manager/include/manager/lockersGoal.h /root/Candidates-2022/challenge_ws/devel/include/manager/lockersGoal.h
 /root/Candidates-2022/challenge_ws/devel/.private/manager/include/manager/talkResult.h /root/Candidates-2022/challenge_ws/devel/include/manager/talkResult.h
 /root/Candidates-2022/challenge_ws/devel/.private/manager/include/manager/openAction.h /root/Candidates-2022/challenge_ws/devel/include/manager/openAction.h
@@ -114,6 +116,7 @@ manager
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/_package_watchGoal.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/_package_watchGoal.lisp
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/_package_openGoal.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/_package_openGoal.lisp
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/object.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/object.lisp
+/root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/info.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/info.lisp
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/_package_lockersFeedback.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/_package_lockersFeedback.lisp
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/target.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/target.lisp
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/_package_talkFeedback.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/_package_talkFeedback.lisp
@@ -148,6 +151,7 @@ manager
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/_package_lockersAction.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/_package_lockersAction.lisp
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/talkActionResult.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/talkActionResult.lisp
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/lockersActionGoal.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/lockersActionGoal.lisp
+/root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/_package_info.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/_package_info.lisp
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/talkFeedback.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/talkFeedback.lisp
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/_package_navigateActionResult.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/_package_navigateActionResult.lisp
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/common-lisp/ros/manager/msg/navigateActionFeedback.lisp /root/Candidates-2022/challenge_ws/devel/share/common-lisp/ros/manager/msg/navigateActionFeedback.lisp
@@ -209,6 +213,7 @@ manager
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/roseus/ros/manager/msg/lockersAction.l /root/Candidates-2022/challenge_ws/devel/share/roseus/ros/manager/msg/lockersAction.l
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/roseus/ros/manager/msg/lockersGoal.l /root/Candidates-2022/challenge_ws/devel/share/roseus/ros/manager/msg/lockersGoal.l
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/roseus/ros/manager/msg/talkActionGoal.l /root/Candidates-2022/challenge_ws/devel/share/roseus/ros/manager/msg/talkActionGoal.l
+/root/Candidates-2022/challenge_ws/devel/.private/manager/share/roseus/ros/manager/msg/info.l /root/Candidates-2022/challenge_ws/devel/share/roseus/ros/manager/msg/info.l
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/roseus/ros/manager/msg/lockersActionResult.l /root/Candidates-2022/challenge_ws/devel/share/roseus/ros/manager/msg/lockersActionResult.l
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/roseus/ros/manager/msg/lockersActionFeedback.l /root/Candidates-2022/challenge_ws/devel/share/roseus/ros/manager/msg/lockersActionFeedback.l
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/roseus/ros/manager/msg/talkFeedback.l /root/Candidates-2022/challenge_ws/devel/share/roseus/ros/manager/msg/talkFeedback.l
@@ -216,6 +221,7 @@ manager
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/roseus/ros/manager/srv/getObject.l /root/Candidates-2022/challenge_ws/devel/share/roseus/ros/manager/srv/getObject.l
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/roseus/ros/manager/srv/getInfo.l /root/Candidates-2022/challenge_ws/devel/share/roseus/ros/manager/srv/getInfo.l
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/gennodejs/ros/manager/_index.js /root/Candidates-2022/challenge_ws/devel/share/gennodejs/ros/manager/_index.js
+/root/Candidates-2022/challenge_ws/devel/.private/manager/share/gennodejs/ros/manager/msg/info.js /root/Candidates-2022/challenge_ws/devel/share/gennodejs/ros/manager/msg/info.js
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/gennodejs/ros/manager/msg/watchActionGoal.js /root/Candidates-2022/challenge_ws/devel/share/gennodejs/ros/manager/msg/watchActionGoal.js
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/gennodejs/ros/manager/msg/openActionFeedback.js /root/Candidates-2022/challenge_ws/devel/share/gennodejs/ros/manager/msg/openActionFeedback.js
 /root/Candidates-2022/challenge_ws/devel/.private/manager/share/gennodejs/ros/manager/msg/target.js /root/Candidates-2022/challenge_ws/devel/share/gennodejs/ros/manager/msg/target.js

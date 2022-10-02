@@ -5,7 +5,7 @@ from unittest import result
 import rospy
 import actionlib
 from geometry_msgs.msg import Pose
-from manager.msg import navigateAction, navigateGoal, talkGoal, talkAction, lockersAction, lockersFeedback, lockersResult, lockersGoal
+from manager.msg import navigateAction, navigateGoal, talkGoal, talkAction, lockersAction, lockersFeedback, lockersResult, lockersGoal, watchAction, watchFeedback, watchResult, watchGoal
 from manager.srv import *
 
 def definePose(x,y,z,ox,oy,oz,q):
@@ -76,6 +76,25 @@ def call_server_store(target):
 
     return result.done
 
+def feedback_cb_vision(msg):
+    print(msg.check)
+
+def call_server_vision(name, position):
+    client = actionlib.SimpleActionClient('watches', watchAction)
+    client.wait_for_server()
+
+    goal = watchGoal()
+    goal.tag = name
+    goal.pose = position
+
+    client.send_goal(goal,feedback_cb=feedback_cb_store)
+
+    client.wait_for_result()
+
+    output = client.get_result()
+
+    return output.result
+
 def getTarget_client(objective):
     rospy.wait_for_service('getTarget')
     try:
@@ -87,7 +106,6 @@ def getTarget_client(objective):
     except rospy.ServiceException as e:
         print("Something went wrong: ", e)
 
-
 def getObject_client(id):
     rospy.wait_for_service('getObject')
     try:
@@ -98,7 +116,6 @@ def getObject_client(id):
 
     except rospy.ServiceException as e:
         print("Something went wrong: ", e)
-
 
 if __name__ == '__main__':
     rospy.init_node('main_engine')
@@ -117,6 +134,10 @@ if __name__ == '__main__':
 
                     #getTarget
                     location = getTarget_client(name)
+
+                    #Vision
+                    vision = call_server_vision(name,location)
+                    print(vision)
 
                     #Navigtion
                     nav_result = call_server_nav(location)
