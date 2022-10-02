@@ -41,7 +41,8 @@ Tasks:
 4. Develop the Store ActionServer, the Linear Actuator Service and do the phisical implementation with a microcontroller
 
 *For building the workspace, the catkin build command from sudo apt-get install python3-catkin-tools was used.
-**The Arduino must be connected in the following way:
+*For this solution, an Arduino Mega was used, which must be connected as follows:
+
 <img src='circuit.jpg' width="1000"/>
 
 Guide to run:
