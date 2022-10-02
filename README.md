@@ -42,7 +42,7 @@ Tasks:
 
 *For building the workspace, the catkin build command from sudo apt-get install python3-catkin-tools was used.
 **The Arduino must be connected in the following way:
-<img src='circuito.jpg' width="1000"/>
+<img src='circuit.jpg' width="1000"/>
 
 Guide to run:
 1. Connect the Arduino with the servo_ros.ino to the "Port Name" port in the computer.
