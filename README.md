@@ -32,6 +32,8 @@ GetObject and GetTarget services are done in the challenge_ws
 
 <img src='Reto Integracion CD2022.jpg' width="1000"/>
 
+The following system opens or closes a locker in a storing system. It does it by receiving an ID and checking if it matches one of the IDs of the stored objects. If it does it opens the corresponding locker.
+
 Tasks:
 1. Develop the Navigation ActionServer
 2. Develop the Speech ActionServer
