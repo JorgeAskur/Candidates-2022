@@ -61,7 +61,7 @@ In the main engine, put 1 if you wish to open a locker and the id of the object 
 '31512': 'Motor',
 '62232': 'LED',
 
-Use q when asked if you want to open a locker for quitting the main engine.
+Use "q" when asked if you want to open a locker for quitting the main engine.
 
 ## References
 - [actionlib](http://wiki.ros.org/actionlib)
