@@ -40,10 +40,11 @@ Tasks:
 3. Develop the Vision ActionServer and the GetInfo service
 4. Develop the Store ActionServer, the Linear Actuator Service and do the phisical implementation with a microcontroller
 
-For building the workspace, the catkin build command from sudo apt-get install python3-catkin-tools was used.
+*For building the workspace, the catkin build command from sudo apt-get install python3-catkin-tools was used.
+**The Arduino must be connected in the following way:
 
 Guide to run:
-1. Connect Arduino to the "Port Name" port in the computer.
+1. Connect the Arduino with the servo_ros.ino to the "Port Name" port in the computer.
 *in each terminal you have to run the source devel/setup.bash
 2. Run rosrun manager getInfo.py
 3. Run rosrun manager getObject.py
